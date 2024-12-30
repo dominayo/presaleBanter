@@ -15,7 +15,7 @@ const projectId = "1e0539d0cea5b95bb3010935c03837e8";
 
 // 2. Create a metadata object - optional
 const metadata = {
-  name: "Betura",
+  name: "Banter",
   description: "AppKit Example",
   url: "https://reown.com/appkit", // origin must match your domain & subdomain
   icons: ["https://assets.reown.com/reown-profile-pic.png"],

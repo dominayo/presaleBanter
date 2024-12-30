@@ -10,7 +10,7 @@ const Whitepaper = () => {
         <div className="font-balibold uppercase text-center text-4xl md:text-6xl md:leading-[72px]">
           LEARN MORE ABOUT
           <br />
-          $BETURA
+          $BANTER
         </div>
         <button className="btn-gradient !w-full">Download Whitepaper</button>
       </div>

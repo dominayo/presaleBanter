@@ -1,4 +1,4 @@
-const Betura = () => {
+const Banter = () => {
   return (
     <svg
       width="90"
@@ -112,4 +112,4 @@ const Betura = () => {
   );
 };
 
-export default Betura;
+export default Banter;

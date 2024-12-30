@@ -23,7 +23,7 @@ const Community = () => {
           </button>
         </div>
         <div className="font-balibold text-2xl md:text-4xl px-8 py-3 bg-[#655242] bg-opacity-70 rounded-[24px]">
-          Join the $Betura Community
+          Join the $Banter Community
         </div>
       </div>
     </div>

@@ -15,16 +15,16 @@ const HeroSection = () => {
           />
 
           <h1 className="text-4xl lg:text-5xl text-white mb-6 font-boldstrom w-max-full text-center">
-            Revolutionizing Betting with Blockchain
+            Revolutionizing Banter
           </h1>
 
           <p className="text-lg lg:text-2xl text-white mb-8 font-anton">
-            The Future Of Betting Starts Here
+            The Future Of Blockchain Starts Here
           </p>
 
           <div className="flex flex-col lg:flex-row gap-12 w-full px-20 lg:px-0">
             <a href="#how_to_buy" className="btn-gradient !w-full !text-[24px]">
-              Buy $Betura
+              Buy $Banter
             </a>
             <a href="#whitepaper" className="btn-gradient !w-full !text-[24px]">
               Read Whitepaper

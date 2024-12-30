@@ -14,7 +14,7 @@ const TokenInfoSection = () => {
         WHY CHOOSE BETURA?
       </div>
 
-      <div className="flex-1 flex flex-col justify-center mt-10 gap-10 md:hidden">
+      <div className="flex-1 flex flex-col justify-center mt-10 gap-10 ">
         <div className="flex items-center gap-2">
           <img src="/assets/images/secure.png" />
           <div className="flex flex-col items-center gap-2">
@@ -22,7 +22,7 @@ const TokenInfoSection = () => {
               AUDITED AND SECURE
             </div>
             <div className="font-robotoBold text-lg text-center">
-              $Betura has been independently audited for security and
+              $Banter has been independently audited for security and
               transparency.
             </div>
           </div>
@@ -45,20 +45,20 @@ const TokenInfoSection = () => {
           <img src="/assets/images/net.png" />
           <div className="flex flex-col items-center gap-2">
             <div className="font-robotoBold text-2xl text-center">
-              INTEGRATED WITH BETURA.NET
+              INTEGRATED WITH BANTER.NET
             </div>
             <div className="font-robotoBold text-lg text-center">
-              Use $Betura seamlessly on our betting platform, Betura.net.
+              Use $Banter seamlessly on our Crowd Funding, Banter.net.
             </div>
           </div>
         </div>
 
-        <img src="/assets/images/playground.png" alt="playground" />
+        {/* <img src="/assets/images/playground.png" alt="playground" /> */}
       </div>
 
-      <div className="flex-1 items-center justify-center mt-20 hidden md:flex">
+      {/* <div className="flex-1 items-center justify-center mt-20 hidden md:flex">
         <img src="/assets/images/token_info.png" className="w-[70%]" />
-      </div>
+      </div> */}
     </div>
   );
 };

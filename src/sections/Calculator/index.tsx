@@ -5,23 +5,23 @@ import { socket } from "../../utils/socket.ts";
 const Calculator = () => {
   const [count, setCount] = useState("");
   const [price, setPrice] = useState(0);
-  const [beturaPrice, setBeturaPrice] = useState(0);
+  const [beturaPrice, setBanterPrice] = useState(0);
 
   useEffect(() => {
     setCount("0");
   }, []);
 
-  const getBeturaPrice = async () => {
+  const getBanterPrice = async () => {
     const res = await BaseAPI.callAPI({
       url: "/tokenPrice",
       method: "GET",
     });
 
-    if (!res.error) setBeturaPrice(res.data.currentPrice);
+    if (!res.error) setBanterPrice(res.data.currentPrice);
   };
 
   const handleTokenPriceUpdate = (data) => {
-    setBeturaPrice(data.currentPrice);
+    setBanterPrice(data.currentPrice);
   };
 
   const handleCalc = () => {
@@ -33,7 +33,7 @@ const Calculator = () => {
   }, [count, beturaPrice]);
 
   useEffect(() => {
-    getBeturaPrice();
+    getBanterPrice();
     socket.on("tierPriceUpdate", handleTokenPriceUpdate);
 
     return () => {
@@ -56,7 +56,7 @@ const Calculator = () => {
         <div className="w-full md:w-[500px] flex flex-col gap-6 md:pt-8 md:pb-15">
           <div className="bg-[#86755466] rounded-[25px] border-[4px] border-[#DBC9C966] flex flex-col items-center gap-[10px] px-5 md:px-10 py-5">
             <div className="text-[32px] font-technology border border-[#DBC9C966] rounded-[20px] w-full text-center">
-              ENTER HOW MUCH $BETURA
+              ENTER HOW MUCH $Banter
               <br />
               YOU WILL RECEIVE
             </div>

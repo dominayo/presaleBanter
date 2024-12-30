@@ -1,5 +1,5 @@
 import TokenDropdown from "../../components/common/TokenDropdown";
-import Betura from "../../components/images/Betura";
+import Banter from "../../components/images/Banter";
 import BinanceChain from "../../components/images/BinanceChain";
 import EthereumChain from "../../components/images/EthereumChain";
 import SolanaChain from "../../components/images/SolanaChain";
@@ -18,9 +18,9 @@ const ConnectWallet = () => {
   const [inputBnb, setInputBnb] = useState("");
   const [token, setToken] = useState("");
 
-  const [beturaPrice, setBeturaPrice] = useState(0);
+  const [beturaPrice, setBanterPrice] = useState(0);
   const [tokenPriceData, setTokenPriceData] = useState([]);
-  const [beturaCount, setBeturaCount] = useState(0);
+  const [beturaCount, setBanterCount] = useState(0);
 
   const ethereumChainId = mainnet.id;
   const solanaChainId = solana.id;
@@ -44,13 +44,13 @@ const ConnectWallet = () => {
     setToken(value);
   };
 
-  const getBeturaPrice = async () => {
+  const getBanterPrice = async () => {
     const res = await BaseAPI.callAPI({
       url: "/tokenPrice",
       method: "GET",
     });
 
-    if (!res.error) setBeturaPrice(res.data.currentPrice);
+    if (!res.error) setBanterPrice(res.data.currentPrice);
   };
 
   const getTokenPrices = async () => {
@@ -91,11 +91,11 @@ const ConnectWallet = () => {
     ).priceInUSD;
     if (beturaPrice) {
       if (chainId === ethereumChainId)
-        setBeturaCount(Math.floor((tokenPrice * inputEth) / beturaPrice));
+        setBanterCount(Math.floor((tokenPrice * inputEth) / beturaPrice));
       else if (chainId === solanaChainId)
-        setBeturaCount(Math.floor((tokenPrice * inputSol) / beturaPrice));
+        setBanterCount(Math.floor((tokenPrice * inputSol) / beturaPrice));
       else if (chainId === bscChainId)
-        setBeturaCount(Math.floor((tokenPrice * inputBnb) / beturaPrice));
+        setBanterCount(Math.floor((tokenPrice * inputBnb) / beturaPrice));
     }
   }, [inputEth, inputSol, inputBnb, beturaPrice, token, tokenPriceData]);
 
@@ -103,7 +103,7 @@ const ConnectWallet = () => {
     if (chainId === ethereumChainId) setToken("ETH");
     else if (chainId === solanaChainId) setToken("SOL");
     else if (chainId === bscChainId) setToken("BNB");
-    getBeturaPrice();
+    getBanterPrice();
     getTokenPrices();
   }, [chainId]);
 
@@ -188,7 +188,7 @@ const ConnectWallet = () => {
             NUMBER OF TOKENS YOU WILL RECEIVE
           </div>
           <div className="w-full md:w-auto flex items-center">
-            <Betura />
+            <Banter />
             <input
               value={beturaCount}
               className="w-full md:w-96 text-[24px] font-roboto outline-none bg-transparent border-2 border-[#EEE5BA] rounded-[6px] h-[42px] px-4"
