@@ -1,0 +1,47 @@
+:root {
+  --font-roboto-regular: "roboto-regular", system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+
+  --font-roboto-bold: "roboto-bold", system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+body {
+  background: #383333;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 4px;
+  width: 4px;
+  border-radius: 10px;
+  background: #f2d33c;
+}
+
+.suspense-container {
+  background-color: #0B0A1C;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  &.fill {
+    path:not(.no-touch) {
+      fill: white;
+    }
+  }
+  &.stroke {
+    path:not(.no-touch) {
+      stroke: white;
+    }
+  }
+}

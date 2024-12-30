@@ -1,0 +1,182 @@
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'AMCAP Eternal Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AMCAP Eternal Regular'), url('/assets/fonts/AMCAP-Eternal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Regular'), url('/assets/fonts/roboto/Roboto-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Roboto Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Italic'), url('/assets/fonts/roboto/Roboto-Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Bold'), url('/assets/fonts/roboto/Roboto-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Bold Italic'), url('/assets/fonts/roboto/Roboto-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Thin'), url('/assets/fonts/roboto/Roboto-Thin.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Thin Italic'), url('/assets/fonts/roboto/Roboto-ThinItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Light'), url('/assets/fonts/roboto/Roboto-Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Light Italic'), url('/assets/fonts/roboto/Roboto-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Medium'), url('/assets/fonts/roboto/Roboto-Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Medium Italic'), url('/assets/fonts/roboto/Roboto-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Black'), url('/assets/fonts/roboto/Roboto-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Black Italic'), url('/assets/fonts/roboto/Roboto-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Alfa Slab One Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Alfa Slab One Regular'), url('/assets/fonts/AlfaSlabOne-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anton'), url('/assets/fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Balibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Balibold'), url('/assets/fonts/Balibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Boldstrom';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Boldstrom'), url('/assets/fonts/Boldstrom.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Archivo Black Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Archivo Black Regular'), url('/assets/fonts/ArchivoBlack-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Technology Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Technology Regular'), url('/assets/fonts/Technology.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Technology Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Technology Italic'), url('/assets/fonts/Technology Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Technology Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Technology Bold Italic'), url('/assets/fonts/Technology Bold Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Technology Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Technology Bold'), url('/assets/fonts/Technology Bold.woff') format('woff');
+}
